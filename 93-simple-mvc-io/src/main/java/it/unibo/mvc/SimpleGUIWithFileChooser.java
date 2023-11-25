@@ -25,7 +25,7 @@ public final class SimpleGUIWithFileChooser {
 
     private final static int PROPORTION = 2;
 
-    private final JFrame frame = new JFrame();
+    private final JFrame frame = new JFrame("SimpleGUIWithFileChooser");
 
     private SimpleGUIWithFileChooser(final Controller controller) {
         final JPanel canvas = new JPanel();
@@ -88,7 +88,7 @@ public final class SimpleGUIWithFileChooser {
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
     }
-    
+
     /**
      * Launches the application
      * 
