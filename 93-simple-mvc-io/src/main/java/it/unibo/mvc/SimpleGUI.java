@@ -23,7 +23,7 @@ public final class SimpleGUI {
 
     private final JFrame frame = new JFrame("SimpleGui");
 
-    public SimpleGUI(final Controller controller) {
+    private SimpleGUI(final Controller controller) {
         final JPanel canvas = new JPanel();
         canvas.setLayout(new BorderLayout());
         final JTextArea text = new JTextArea();
