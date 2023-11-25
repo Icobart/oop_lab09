@@ -75,7 +75,15 @@ public class BadIOGUI {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("read button works");    
+                try {
+                    final List<String> rs = Files.readAllLines(new File(PATH).toPath(), StandardCharsets.UTF_8);
+                    for(final String readStream : rs) {
+                        System.out.println(readStream);
+                    }
+                } catch (IOException e1) {
+                    JOptionPane.showMessageDialog(frame, e1, "Error", JOptionPane.ERROR_MESSAGE);
+                    e1.printStackTrace(); // NOPMD: allowed as this is just an exercise
+                }
             }
             
         });
