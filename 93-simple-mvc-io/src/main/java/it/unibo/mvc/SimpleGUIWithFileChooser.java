@@ -34,8 +34,6 @@ public final class SimpleGUIWithFileChooser {
         canvas.add(text, BorderLayout.CENTER);
         final JButton save = new JButton("Save");
         canvas.add(save, BorderLayout.SOUTH);
-        
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         save.addActionListener(new ActionListener() {
 
             @Override
